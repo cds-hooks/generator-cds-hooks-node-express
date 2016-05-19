@@ -1,0 +1,59 @@
+{
+  "name": "generator-cds-hooks-node-express",
+  "version": "0.1.0",
+  "description": "Starter Kit for CDS Hooks Service + Node/Express",
+  "homepage": "https://github.com/mattberther/generator-cds-hooks-node-express",
+  "author": {
+    "name": "Matt Berther",
+    "email": "matt@berther.io",
+    "url": "https://matt.berther.io"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "node",
+    "express",
+    "cds",
+    "hl7",
+    "fhir",
+    "cds-hooks",
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "lodash": "4.12.0",
+    "mkdirp": "0.5.1",
+    "yeoman-generator": "^0.23.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.1.0",
+    "eslint-config-xo-space": "^0.13.0",
+    "gulp": "^3.9.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-plumber": "^1.0.0",
+    "yeoman-assert": "^2.0.0",
+    "yeoman-test": "^1.0.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "mattberther/generator-cds-hooks-node-express",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags && npm publish"
+  },
+  "license": "MIT"
+}
